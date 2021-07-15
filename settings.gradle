@@ -1,0 +1,3 @@
+rootProject.name = "KCNetFramework"
+include ':app'
+include ':net'

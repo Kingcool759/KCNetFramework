@@ -26,12 +26,7 @@ class MainViewModel(application: Application): BasePageViewModel<DataX>(applicat
             .bindStateLayout()
             .bindSmartRefresh()
             .doOnResponseSuccess { _, body ->
-                handleItemData(page,body.data.datas)
-                Log.d("ddd","请求成功！")
-                Log.d("ddd",body.data.datas.toString())
-            }
-            .doOnAnyFail {
-                Log.d("ddd","请求失败！")
+                handleItemData(page, body.data.datas)
             }
     }
 
